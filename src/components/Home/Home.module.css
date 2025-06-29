@@ -1,0 +1,471 @@
+/* .home {
+  margin: 0% 0% 5% 0%;
+}
+.portalbtn {
+  display: inline-block;
+  max-width: 120px;
+  padding: 25px;
+  border: none;
+  margin: 15px;
+  background-image: linear-gradient(90deg, #0062ff 0%, #61efff 100%);
+  border-radius: 10px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.portals {
+  border: 2px solid #cdcaca;
+  background-color: #f1f1f1;
+  margin: 80px 1%;
+  padding: 0% 0% 2%;
+}
+.portals h2 {
+  color: red;
+}
+.portalLinks {
+  margin-top: 2%;
+}
+
+.marqueediv {
+  margin: 30px 1% 0px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.latestnews {
+  background-color: red;
+  color: #fff;
+  width: 110px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px 5px;
+}
+a {
+  text-decoration: none;
+}
+a span {
+  margin-right: 20px;
+}
+.collegenotices {
+  margin: 0% 1%;
+  display: flex;
+  justify-content: space-between;
+}
+.cards {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.cards h2 {
+  color: red;
+}
+.cardContainer {
+  margin-top: 40px;
+}
+
+.importantPersonSection {
+  max-width: 1300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.governorDiv,
+.viceChancellorDiv,
+.creatorDiv {
+  margin: 5px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px #e2e1e1;
+}
+.governorDetailDiv,
+.viceChancellorDetailDiv,
+.creatorDetailDiv {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.personImg {
+  width: 260px;
+  height: 250px;
+}
+.governorName,
+.viceChancellorName,
+.creatorName {
+  color: #ee6115;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.governorPara,
+.viceChancellorPara,
+.creatorPara {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  text-align: center;
+  line-height: 0.7;
+}
+.ProfileBtn {
+  text-align: center;
+  margin: 12px auto 4px;
+  padding: 4px 8px;
+  max-width: 120px;
+  border: 1px solid #f88f69;
+  background-color: #fff;
+}
+.ProfileBtn a {
+  text-decoration: none;
+  color: #f88f69;
+}
+.ProfileBtn:hover {
+  background-color: #f88f69;
+  transition: all 0.2s;
+}
+.ProfileBtn:hover a {
+  color: #fff;
+}
+
+/* Media query for mobile screens */
+/* @media (max-width: 768px) {
+  .carouselContainer {
+    max-width: 100%;
+  }
+
+  .carouselImage {
+    width: 100%;
+    height: 210px;
+  }
+
+  .marqueediv {
+    margin: 25px 1% 0px;
+    height: 30px;
+  }
+
+  .latestnews {
+    text-align: center;
+    padding: 5px 5px 2px 5px;
+    font-size: 14px;
+  }
+
+  marquee {
+    width: 100%;
+  }
+
+  a span {
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .collegenotices {
+    margin: 2% 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portalbtn {
+    max-width: 100%;
+    padding: 20px;
+    margin: 8px;
+  }
+
+  .portals {
+    margin: 40px 2%;
+  }
+
+  .portalLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .importantPersonSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .governorDiv,
+  .viceChancellorDiv,
+  .creatorDiv {
+    width: 80%;
+    margin: 10px 0;
+    padding: 7px 5px;
+  }
+
+  .personImg {
+    width: 100%;
+    height: 230px;
+  }
+
+  .ProfileBtn {
+    max-width: 100%;
+  }
+
+  .cards {
+    margin-top: 30px;
+  }
+  .cardContainer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  } 
+ } */
+
+
+
+
+
+
+/* pdated css */
+ .home {
+  margin: 0% 0% 5% 0%;
+}
+
+.portalbtn {
+  display: inline-block;
+  max-width: 120px;
+  padding: 25px;
+  border: none;
+  margin: 15px;
+  background-image: linear-gradient(90deg, #0062ff 0%, #61efff 100%);
+  border-radius: 10px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.portals {
+  border: 2px solid #cdcaca;
+  background-color: #f1f1f1;
+  margin: 80px 1%;
+  padding: 0% 0% 2%;
+}
+
+.portals h2 {
+  color: red;
+}
+
+.portalLinks {
+  margin-top: 2%;
+}
+
+.marqueediv {
+  margin: 30px 1% 0px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.latestnews {
+  background-color: red;
+  color: #fff;
+  width: 110px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a span {
+  margin-right: 20px;
+}
+
+.collegenotices {
+  margin: 0% 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.cards h2 {
+  color: red;
+}
+
+.cardContainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cardContainer a {
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
+.importantPersonSection {
+  max-width: 1300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.governorDiv,
+.viceChancellorDiv,
+.creatorDiv {
+  margin: 5px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px #e2e1e1;
+}
+
+.governorDetailDiv,
+.viceChancellorDetailDiv,
+.creatorDetailDiv {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personImg {
+  width: 260px;
+  height: 250px;
+}
+
+.governorName,
+.viceChancellorName,
+.creatorName {
+  color: #ee6115;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.governorPara,
+.viceChancellorPara,
+.creatorPara {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  text-align: center;
+  line-height: 0.7;
+}
+
+.ProfileBtn {
+  text-align: center;
+  margin: 12px auto 4px;
+  padding: 4px 8px;
+  max-width: 120px;
+  border: 1px solid #f88f69;
+  background-color: #fff;
+}
+
+.ProfileBtn a {
+  text-decoration: none;
+  color: #f88f69;
+}
+
+.ProfileBtn:hover {
+  background-color: #f88f69;
+  transition: all 0.2s;
+}
+
+.ProfileBtn:hover a {
+  color: #fff;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .carouselContainer {
+    max-width: 100%;
+  }
+
+  .carouselImage {
+    width: 100%;
+    height: 210px;
+  }
+
+  .marqueediv {
+    margin: 25px 1% 0px;
+    height: 30px;
+  }
+
+  .latestnews {
+    text-align: center;
+    padding: 5px 5px 2px 5px;
+    font-size: 14px;
+  }
+
+  marquee {
+    width: 100%;
+  }
+
+  a span {
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .collegenotices {
+    margin: 2% 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portalbtn {
+    max-width: 100%;
+    padding: 20px;
+    margin: 8px;
+  }
+
+  .portals {
+    margin: 40px 2%;
+  }
+
+  .portalLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .importantPersonSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .governorDiv,
+  .viceChancellorDiv,
+  .creatorDiv {
+    width: 80%;
+    margin: 10px 0;
+    padding: 7px 5px;
+  }
+
+  .personImg {
+    width: 100%;
+    height: 230px;
+  }
+
+  .ProfileBtn {
+    max-width: 100%;
+  }
+
+  .cards {
+    margin-top: 30px;
+  }
+
+  .cardContainer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+
+

@@ -1,0 +1,116 @@
+.academicActivities {
+  max-width: 800px;
+  margin: 0 auto 70px;
+  padding: 20px;
+}
+
+.academicActivities h2 {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.academicActivities p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.activityCard {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.activityCard:hover {
+  transform: translateY(-5px);
+}
+
+.activityImage {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+
+.activityInfo {
+  padding: 20px;
+}
+
+.activityInfo h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.activityInfo p {
+  font-size: 14px;
+  color: #666;
+}
+
+.activityLink {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.activityLink:hover {
+  background-color: #0056b3;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 600px) {
+  .academicActivities {
+    padding: 10px;
+  }
+
+  .academicActivities h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .academicActivities p {
+    font-size: 12px;
+  }
+
+  .activityCard {
+    flex-direction: column;
+    width: 94%;
+    margin: 15px auto;
+  }
+
+  .activityImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .activityInfo {
+    padding: 0px 5px 10px;
+  }
+
+  .activityInfo h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .activityInfo p {
+    font-size: 12px;
+  }
+
+  .activityLink {
+    margin-top: 0px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

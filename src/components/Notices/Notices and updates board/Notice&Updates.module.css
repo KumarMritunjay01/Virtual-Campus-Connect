@@ -1,0 +1,21 @@
+.noticeDiv {
+  height: 30vh;
+  margin: 40px auto;
+
+}
+.noticeHeading {
+  color: red;
+}
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .noticeDiv {
+    padding: 15px;
+  }
+
+  .noticeHeading {
+    font-size: 20px;
+  }
+  .noticeDiv p {
+    font-size: 14px;
+  }
+}

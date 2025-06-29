@@ -1,0 +1,154 @@
+/* EditItem.module.css */
+
+body {
+    background-color: #f0f4f8;
+    /* Soft background color for the body */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.editContainer {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #fefefe;
+    /* White background for the container */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    transform-origin: center center;
+    /* Makes the animation feel more natural */
+}
+
+.editTitle {
+    font-size: 28px;
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f7f7f7;
+    /* Light background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for the form */
+}
+
+.editInput,
+.editTextarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.editInput:focus,
+.editTextarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 8px rgba(79, 70, 229, 0.2);
+}
+
+.editTextarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.editButton {
+    background-color: #4f46e5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.editButton:hover {
+    background-color: #3730a3;
+    transform: scale(1.05);
+    /* Slightly enlarge the button on hover */
+}
+
+.loadingText {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional: Adding a subtle background hover effect on container */
+.editContainer:hover {
+    background-color: #fafafa;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    /* Slightly stronger shadow on hover */
+}
+
+/* EditItem.module.css */
+
+.editContainer {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    transform-origin: center center;
+    position: relative;
+    /* Ensure the cancel button is positioned relative to this container */
+}
+
+.cancelButton {
+    position: absolute;
+    /* Position the button relative to the container */
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ff4d4d;
+    /* Red color for the "X" */
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cancelButton:hover {
+    color: #d13c3c;
+    /* Darker red on hover */
+}
+
+.editTitle {
+    font-size: 28px;
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', sans-serif;
+}
+

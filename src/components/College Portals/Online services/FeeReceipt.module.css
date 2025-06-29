@@ -1,0 +1,135 @@
+.FeeReceiptContainer {
+  margin: 0 auto 1%;
+  background-color: rgb(247, 247, 138);
+  width: 400px;
+  padding: 8px 0px 2px 0px;
+}
+
+.FeeReceiptLogo {
+  margin-bottom: -8px;
+  width: 50px;
+  height: 50px;
+}
+
+.FeeReceiptUniName {
+  color: #0084ff;
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.FeeReceiptHeading {
+  font-size: 20px;
+  color: red;
+}
+.paymentDetails {
+  margin: 0;
+}
+.paymentDetailsHeading {
+  margin: 0 0 10px 0;
+  text-decoration: underline;
+  color: #000;
+  font-size: 17px;
+}
+.paymentDetails .para {
+  margin: 2px;
+  color: #000;
+}
+.paymentDetails .para span {
+  color: #000;
+  font-weight: 500;
+}
+.paymentStatus {
+  margin: 5px;
+  color: #000;
+}
+.paymentStatus span {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+}
+.FeeReceiptFooter {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.signatureParagraph {
+  margin: -15px 0px 0px 34%;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.FeeReceiptFooter img {
+  width: 60px;
+  height: 30px;
+}
+.downloadDiv {
+  margin-bottom: 3%;
+}
+.downloadBtn {
+  padding: 12px 15px;
+  color: #fff;
+  background-color: #009688;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.downloadBtn:hover {
+  background-color: #057b6f;
+}
+.date {
+  color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .FeeReceiptContainer {
+    width: 300px;
+  }
+  .FeeReceiptLogo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .FeeReceiptUniName {
+    font-size: 20px;
+  }
+  .FeeReceiptHeading {
+    font-size: 18px;
+  }
+  .paymentDetailsHeading {
+    margin: 0 0 10px 0;
+    text-decoration: underline;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .paymentDetails .para {
+    font-size: 15px;
+  }
+  .paymentStatus {
+    font-size: 15px;
+  }
+  .paymentStatus span {
+    font-size: 15px;
+  }
+  .FeeReceiptFooter {
+    margin-left: 12px;
+  }
+  .date {
+    font-size: 15px;
+  }
+  .signatureParagraph {
+    margin: -15px 0px 0px 22%;
+    font-size: 15px;
+  }
+  .FeeReceiptFooter img {
+    margin-left: -5px;
+  }
+  .downloadDiv {
+    margin: 5% 2% 8%;
+  }
+  .downloadBtn {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

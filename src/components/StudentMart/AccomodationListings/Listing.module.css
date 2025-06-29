@@ -1,0 +1,326 @@
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Color variables */
+:root {
+  --primary-light: #26a69a;
+  --primary-dark: #00796b;
+  --bg-gradient: linear-gradient(-45deg, #e0f7fa, #f1f8e9, #fff3e0, #fce4ec);
+  --card-bg: #ffffff;
+  --text-dark: #555555;
+  --text-muted: #777777;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --radius: 1rem;
+}
+
+.listingContainer {
+  background: var(--bg-gradient);
+  background-size: 400% 400%;
+  animation: animatedGradient 20s ease infinite;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listingHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+  margin: 0;
+  min-width: 180px;
+  white-space: nowrap;
+  position: relative;
+  /* for overlapping action buttons */
+}
+
+/* Container for action buttons overlapping the heading */
+.headingActions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 8px;
+  padding: 4px 8px;
+  z-index: 10;
+}
+
+/* Action buttons (edit/delete) common styles */
+.iconCircle {
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--primary-dark);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconCircle:hover {
+  background: #e0f7fa;
+  color: #004d40;
+}
+
+/* Delete button specific color */
+.iconCircle.deleteButton {
+  color: #d32f2f;
+  /* red */
+}
+
+.iconCircle.deleteButton:hover {
+  background: #ffcdd2;
+  /* light red background */
+  color: #b71c1c;
+  /* darker red text */
+}
+
+.searchInputHeader {
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: 2px solid var(--primary-dark);
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 121, 107, 0.1);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.searchInputHeader:focus {
+  border-color: #004d40;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.3);
+  transform: scale(1.02);
+}
+
+.addButton {
+  flex-shrink: 0;
+  background: linear-gradient(to right, var(--primary-light), #00897b);
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(38, 166, 154, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.addButton:hover {
+  background: linear-gradient(to right, var(--primary-dark), #004d40);
+  transform: scale(1.05);
+}
+
+.listingsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.listingCard {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 480px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.listingCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  border-radius: 16px 16px 0 0;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.titleWithActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.titleText {
+  font-size: 16px;
+  /* slightly smaller font */
+  font-weight: 600;
+  color: #ffffff;
+  padding: 8px 12px;
+  /* reduce padding */
+  background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.actionButtons {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.shortDesc {
+  margin: 10px 20px 0;
+  color: var(--text-dark);
+  font-style: italic;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Adjusted card image styles */
+.listingImage {
+  width: calc(100% - 20px);
+  /* slightly smaller width with margin */
+  height: 180px;
+  object-fit:contain;
+  margin: 20px 10px 0;
+  border-radius: 12px;
+  /* smoother edges */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.noImage {
+  text-align: center;
+  color: #777777;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 10px 20px 20px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  white-space: nowrap;
+}
+
+.viewButtonInline {
+  background-color: #2196f3;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
+  transition: background 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.viewButtonInline:hover {
+  background-color: #1976d2;
+}
+
+.payButton {
+  background: linear-gradient(to right, #85d8ff, #4a90e2);
+  /* light blue gradient */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+  /* matching shadow */
+  transition: background 0.3s ease;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 10px 4px 7px;
+}
+
+.payButton:hover {
+  background: linear-gradient(to right, #4a90e2, #357abd);
+  /* slightly darker on hover */
+}
+
+.error {
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .listingHeader {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .heading,
+  .searchInputHeader,
+  .addButton {
+    width: 100%;
+  }
+
+  .listingCard {
+    height: auto;
+  }
+}

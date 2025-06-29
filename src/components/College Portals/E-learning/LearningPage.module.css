@@ -1,0 +1,69 @@
+.eContent {
+  margin: 40px auto 80px;
+}
+.btnContent {
+  margin: 20px 10px;
+}
+.likebtn {
+  background-color: #12de89;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.likebtn:hover {
+  background-color: #12bd76;
+}
+.dislikebtn {
+  margin-left: 10px;
+  background-color: #fa4549;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dislikebtn:hover {
+  background-color: #cf222e;
+}
+.LearningPageDiv h2 {
+  color: red;
+}
+.LearningPageDiv p{
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .LearningPageDiv p {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .LearningPageDiv iframe {
+    width: 280px;
+    height: 190px;
+  }
+  .eContent {
+    margin: 40px auto 80px;
+  }
+  .btnContent {
+    margin: 10px 5px;
+  }
+  .LearningPageDiv h2 {
+    margin-bottom: 0;
+  }
+  .likebtn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .dislikebtn {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}

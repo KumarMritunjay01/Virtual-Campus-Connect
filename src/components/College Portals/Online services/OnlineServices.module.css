@@ -1,0 +1,532 @@
+.onlineServices {
+  padding: 10px;
+  margin: 20px auto 40px;
+}
+
+.onlineServices h2 {
+  margin-bottom: 15px;
+}
+
+.onlineServices p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.iconLink p {
+  color: red;
+  margin-right: 22px;
+}
+
+.icondiv {
+  width: 130px;
+  height: 100px;
+  background-color: rgb(209, 80, 209);
+  border-radius: 10px;
+  position: relative;
+}
+.icondiv:hover {
+  background-color: rgb(193, 44, 193);
+}
+.iconLink i {
+  font-size: 50px; /* Add space between the icon and text */
+  position: absolute;
+  top: 27px;
+  left: 38px;
+  color: #fff;
+}
+
+.servicesList {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Display the list items as a flex container */
+  justify-content: center;
+}
+
+.servicesList div {
+  margin: 0px 20px 0px 0px;
+}
+
+.servicesList a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.servicesList a:hover {
+  color: #0056b3;
+}
+
+/*Styles for examination form*/
+
+.examinationForm {
+  max-width: 500px;
+  margin: 20px auto 80px;
+  padding: 20px 50px;
+  background-color: #dedede;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.examformDetails {
+  padding: 10px 20px;
+}
+.examformDetails h2 {
+  color: red;
+}
+.examinationForm label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.examinationForm label span {
+  color: red;
+}
+
+.examinationForm input[type="text"] {
+  width: 96%;
+  padding: 10px;
+  font-size: 16px;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.examinationForm input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+  outline: none;
+  transform: scale(1.02);
+  animation: glowing 1.5s infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
+.examinationForm select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.examformbtn {
+  background-color: #5ec52e;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.examformbtn:hover {
+  background-color: #42b80c;
+}
+
+/* Style for the Fee payment component */
+.feePage{
+  margin: 20px 0px 80px;
+}
+
+.FeesPaymentDetails {
+  padding: 10px 20px;
+}
+.FeesPaymentDetails h2 {
+  color: red;
+}
+
+.feeService {
+  width: 400px;
+  margin: 2% auto 4%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #dedede;
+  text-align: center;
+}
+
+.onlineServices h2 {
+  font-size: 24px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.paymentForm label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.paymentForm input[type="text"] {
+  width: 94%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.paymentForm input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+  outline: none;
+  transform: scale(1.02);
+  animation: glowing 1.5s infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
+.paymentForm select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feesubmitbtn {
+  margin-top: 25px;
+}
+button[type="submit"] {
+  background-color: #5ec52e;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #42b80c;
+}
+
+/* Style for the Library Content component */
+
+.libraryDetails{
+  margin-top: 40px;
+}
+
+h2 {
+  position: relative;
+}
+
+.logout {
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  font-size: 20px;
+}
+.logout:hover {
+  color: red;
+}
+
+.librarySections {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.librarySections h3 {
+  margin-top: -10px;
+}
+
+/* Add book form container styles */
+.addBookForm {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer .formGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.booklabel {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bookinput,
+.bookinputdate {
+  width: 91%;
+  margin: 0px 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: 0;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.bookinput:focus:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+  outline: none;
+  transform: scale(1.02);
+  animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
+
+/* Add button styles */
+.addButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+/* Table styles */
+.bookTable {
+  width: 80%;
+  margin: 5% 5% 10% 9%;
+  border-collapse: collapse;
+}
+
+.bookTable th,
+.bookTable td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.bookTable th {
+  background-color: #30a14e;
+  color: #fff;
+}
+
+/* Delete button styles */
+.deleteButton {
+  background-color: #fa4549;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #cf222e;
+}
+
+/* Required field indicator */
+.required {
+  color: red;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 600px) {
+  .onlineServices {
+    padding: 8px 15px;
+  }
+
+  .onlineServices p {
+    font-size: 12px;
+  }
+
+  .iconLink p {
+    font-weight: 500;
+    margin-right: 5px;
+  }
+
+  .icondiv {
+    width: 90px;
+    height: 70px;
+  }
+
+  .iconLink i {
+    font-size: 40px;
+    top: 15px;
+    left: 25px;
+  }
+
+  .servicesList div {
+    margin: 0px 5px;
+  }
+
+  .servicesList div li {
+    margin: 0px -2px;
+  }
+
+  /* media query for examination form*/
+
+  .examinationForm {
+    padding: 20px 30px;
+    width: 75%;
+  }
+
+  .examinationForm label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .examinationForm input[type="text"] {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .examinationForm select {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .examformDetails p {
+    font-size: 12px;
+  }
+  .examformbtn {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  /* media query for fee payment component*/
+
+  .feeService {
+    width: 250px;
+    margin: 0% auto 20%;
+    padding: 20px;
+  }
+  .FeesPaymentDetails p {
+    font-size: 12px;
+  }
+
+  .paymentForm label {
+    font-size: 14px;
+  }
+
+  .paymentForm input[type="text"] {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .paymentForm select {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .feesubmitbtn {
+    margin-top: 25px;
+  }
+  button[type="submit"] {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  /* media query for library content*/
+  .libraryPage {
+    padding: 10px;
+  }
+
+  .logout {
+    top: 48% !important;
+    left: 43%;
+    font-size: 16px;
+  }
+  .libraryDetails p {
+    font-size: 12px;
+  }
+
+  .librarySections {
+    margin: 70px auto;
+    padding: 20px 10px;
+    max-width: 90%;
+  }
+
+  .addBookForm {
+    padding: 20px 10px 4px;
+  }
+
+  .booklabel {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .bookinput,
+  .bookinputdate {
+    width: 90%;
+    height: 13px;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .addButton {
+    padding: 8px 14px;
+    margin-left: 85px !important;
+  }
+
+  .bookTable {
+    width: 92%;
+    margin: 10% 2% 22% 5%;
+  }
+
+  .bookTable th,
+  .bookTable td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .deleteButton {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}

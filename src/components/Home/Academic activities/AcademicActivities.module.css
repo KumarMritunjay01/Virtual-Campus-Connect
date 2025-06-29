@@ -1,0 +1,93 @@
+.activityContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0px;
+}
+
+.activityImage img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.activityDetails {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.activityDetails h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.activityDetails p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.activityDetails .activeTask{
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background: linear-gradient(269deg, #0048ff, #0096ff);
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+.activityDetails .inactiveTask{
+  margin-top: 20px;
+  cursor: not-allowed;
+  color: #0096ff;
+  border: 1px solid #0096ff;
+  background-color: #fff;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.taskMessageDiv{
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px 10px;
+  margin: 40px 0px 20px;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 600px) {
+  .activityContainer {
+    padding: 10px;
+  }
+  .activityImage img {
+    max-width: 90%;
+  }
+
+  .activityDetails {
+    text-align: center;
+    margin-top: 0px;
+    padding: 0 20px;
+  }
+
+  .activityDetails h2 {
+    font-size: 24px;
+  }
+
+  .activityDetails p {
+    font-size: 12px;
+  }
+
+  .taskMessageDiv{
+    padding: 10px 5px;
+    width: 110%;
+    margin-left: -20px;
+  }
+}

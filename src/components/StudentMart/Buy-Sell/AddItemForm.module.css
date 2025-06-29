@@ -1,0 +1,162 @@
+.formWrapper {
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    padding: 35px 30px;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    max-width: 520px;
+    margin: 40px auto;
+    animation: fadeIn 0.6s ease-in-out;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    border: 1px solid #c2f0f3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #00796b;
+    text-shadow: none;
+    letter-spacing: 1px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input,
+.textarea {
+    padding: 14px 18px;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: 500;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #bbb;
+    font-weight: 400;
+}
+
+.input:focus,
+.textarea:focus {
+    box-shadow: 0 0 12px 3px rgba(38, 166, 154, 0.35);
+    background-color: #f8ffff;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.submitBtn,
+.cancelBtn {
+    flex: 1;
+    padding: 14px 24px;
+    font-size: 17px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.submitBtn {
+    background: linear-gradient(45deg, #00c9a7, #00b89f);
+    color: #fff;
+}
+
+.submitBtn:hover {
+    background: linear-gradient(45deg, #00b89f, #009e8f);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 184, 159, 0.5);
+}
+
+.cancelBtn {
+    background: rgba(255, 255, 255, 0.85);
+    color: #444;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+}
+
+.cancelBtn:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .formWrapper {
+        padding: 25px 20px;
+        max-width: 90%;
+    }
+
+    .heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .submitBtn,
+    .cancelBtn {
+        width: 100%;
+        transform: none !important;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* 🔧 reduced from 18px to 10px */
+}
+
+.label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    /* 🔧 reduced from 6px to 4px */
+    font-size: 15px;
+    color: #00796b;
+}
+
+/* If you're using a container for each field (recommended): */
+.formField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    /* 🔧 add this to give spacing between groups */
+}

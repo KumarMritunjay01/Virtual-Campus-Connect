@@ -1,0 +1,283 @@
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #00796b;
+  font-weight: 700;
+  letter-spacing: 1px;
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.formGroup,
+.row {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.halfGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftAlignLabel {
+  font-weight: 700;
+  margin-bottom: 14px;
+  /* Increased from 10px */
+  color: #004d40;
+  text-align: left;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  font-weight: 500;
+  color: #222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  outline-offset: 2px;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9e9e9e;
+  font-style: italic;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #26a69a;
+  box-shadow: 0 0 8px rgba(38, 166, 154, 0.3);
+  background-color: #f9fdfd;
+  outline: 3px solid rgba(38, 166, 154, 0.4);
+  outline-offset: 0;
+}
+
+.imageInput {
+  padding: 12px;
+  background-color: #fafafa;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #00796b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imageInput:hover {
+  border-color: #26a69a;
+  box-shadow: 0 0 10px rgba(38, 166, 154, 0.25);
+}
+
+.wideInput,
+.extraWideInput,
+.halfInput {
+  width: 100%;
+}
+
+.phoneInputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.phoneInput {
+  padding-left: 56px;
+  /* increased from 48px */
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  height: 44px;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.phoneInput:focus {
+  border-color: #26a69a;
+  box-shadow: 0 0 10px rgba(38, 166, 154, 0.3);
+  background-color: #f9fdfd;
+  outline: 3px solid rgba(38, 166, 154, 0.4);
+  outline-offset: 0;
+}
+
+.phoneInputWrapper::before {
+  content: "+91";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  /* moved a bit more left from 16px */
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 15px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.addButton {
+  background: linear-gradient(to right, #26a69a, #00897b);
+  color: white;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+  align-self: flex-end;
+  margin-top: 15px;
+  box-shadow: 0 8px 15px rgba(38, 166, 154, 0.4);
+  animation: fadeIn 0.6s ease;
+  user-select: none;
+}
+
+.addButton:hover {
+  background: linear-gradient(to right, #00796b, #004d40);
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 77, 64, 0.6);
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+/* You can add a small error icon before error text */
+/* .error::before {
+  content: "⚠️";
+  font-size: 16px;
+} */
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .addButton {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancelButton {
+  background: #f3f4f6;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: #374151;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.cancelButton:hover {
+  background: #fee2e2;
+  color: #dc2626;
+  transform: rotate(90deg);
+}
+
+.successMessage {
+  background-color: #e0fce0;
+  color: #27632a;
+  padding: 12px 18px;
+  margin-bottom: 18px;
+  border: 1px solid #b2e2b2;
+  border-radius: 12px;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease;
+}
+
+.errorMessage {
+  background-color: #ffe6e6;
+  color: #a33030;
+  padding: 12px 18px;
+  margin-bottom: 18px;
+  border: 1px solid #ffb3b3;
+  border-radius: 12px;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease;
+}
+
+.authError {
+  color: #d32f2f;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease;
+}

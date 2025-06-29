@@ -1,0 +1,286 @@
+.feedbackContainer {
+  margin: 4% auto 8%;
+}
+.formContainer {
+  max-width: 50%;
+  margin: 40px auto 0px;
+  padding: 20px 20px 40px;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("https://media.istockphoto.com/id/1249553392/vector/vector-illustration-customer-reviews-rating-different-people-give-a-review-rating-and.jpg?s=612x612&w=0&k=20&c=gb1q5KbfkFbOrZW-3LsD1TkhVNOUodVkAzLD-sNcZrE=");
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.feedHeading {
+  color: black;
+}
+.title {
+  margin-top: 3%;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+}
+.description {
+  color: #d7d3d3;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  word-spacing: 0.3px;
+  margin-top: 5px;
+}
+.surveyForm {
+  background-color: rgba(27, 27, 50, 0.8);
+  margin: 2% 7%;
+  height: auto;
+  padding: 50px 30px 10px 50px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.formGroup {
+  font-size: 18px;
+}
+.nameLabel,
+.emailLabel,
+.numberLabel {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 30px;
+}
+.surveyForm input[type="text"] {
+  width: 89.8%;
+}
+.surveyForm select {
+  width: 94%;
+}
+.controlForm {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 98%;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.controlForm:focus {
+  border-color: #ff9800;
+  outline: none;
+  transform: scale(1.02);
+  animation: glowing 1.5s infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 152, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.7);
+  }
+}
+.clue {
+  color: #d7d3d3;
+  font-size: 16px;
+}
+#dropdown {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+.sel {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 30px;
+}
+select #dropdown.controlForm {
+  color: #495057;
+  background-color: #fff;
+  padding: 8px 12px;
+}
+.para1 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+}
+.radioLabel {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 5px;
+  position: relative;
+  top: -3px;
+}
+.inputRadio {
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  margin-top: 8px;
+}
+.inputCheckbox {
+  min-width: 1.15rem;
+  min-height: 1.15rem;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.checkboxLabel {
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  top: -2px;
+}
+.para2 {
+  color: #fff;
+  font-size: 18px;
+}
+.commentText {
+  font-size: 20px;
+  color: #fff;
+}
+.text {
+  margin-top: 30px;
+}
+textarea {
+  height: 130px;
+  box-sizing: border-box;
+  border: 1px solid rgb(118, 118, 118);
+  width: 95%;
+  margin-top: 10px;
+}
+.comment {
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+}
+.submittedMessage {
+  color: rgb(3, 212, 3);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 70px auto 100px;
+}
+.btn {
+  background-color: #36af65;
+  color: #f3f3f3;
+  border: none;
+  border-radius: 2px;
+  padding: 15px;
+  font-size: 18px;
+  width: 98%;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.btn:hover {
+  background-color: #24c160;
+}
+
+/* Styles for screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .feedbackContainer {
+    margin: 10% auto 20%;
+  }
+  .formContainer {
+    max-width: 85%;
+    margin: 30px auto 0px;
+    padding: 20px 10px 40px;
+  }
+
+  .feedHeading {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .title {
+    margin-top: 3%;
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .surveyForm {
+    margin: 2% 3%;
+    padding: 30px 10px 10px;
+    font-size: 16px;
+  }
+
+  .nameLabel,
+  .emailLabel,
+  .numberLabel,
+  .sel,
+  .commentText {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  .para1,
+  .para2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .radioLabel,
+  .checkboxLabel {
+    font-size: 16px;
+  }
+
+  .clue {
+    font-size: 14px;
+  }
+
+  .inputRadio,
+  .inputCheckbox {
+    min-height: 1rem;
+    min-width: 1rem;
+    margin-top: 4px;
+  }
+
+  .controlForm,
+  #dropdown,
+  textarea {
+    margin-left: 5px;
+  }
+  textarea {
+    resize: none;
+  }
+
+  .comment {
+    height: 100px;
+    font-size: 16px;
+  }
+
+  .btn {
+    max-width: 95%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px auto 15px;
+  }
+
+  .submittedMessage {
+    font-size: 18px;
+    margin: 100px auto 130px;
+  }
+}
+/* Error Message Styling */
+.errorText {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -18px;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-left: 2px;
+}
+

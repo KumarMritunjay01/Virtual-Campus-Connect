@@ -1,0 +1,234 @@
+/* ===== HEADER STYLING ===== */
+.header {
+  background-color: #3997ef;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.headercontent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 240px;
+}
+
+.logo {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.uniName {
+  font-size: 38px;
+  text-shadow: 2px 3px 5px #393939;
+  letter-spacing: 0.8px;
+}
+
+/* ===== NAVIGATION MENU ===== */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #c4def2;
+}
+
+nav a.active {
+  border-bottom: 2px solid #c4def2;
+  color: #c4def2;
+}
+
+/* ===== LOGIN/SIGNUP BUTTONS ===== */
+.signupBtn,
+.logoutBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.signupBtn:hover,
+.logoutBtn:hover {
+  background-color: #0056b3;
+}
+
+/* ===== AUTH POPUP (LOGIN/SIGNUP) ===== */
+.authOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-start;
+  /* Align to top */
+  justify-content: flex-end;
+  /* Shift to right */
+  padding: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.authPopup {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  animation: slideIn 0.3s forwards;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease-in-out;
+}
+
+.closeBtn:hover {
+  color: red;
+}
+
+/* ===== PRINT SETTINGS (HIDE HEADER) ===== */
+@media print {
+  .header {
+    display: none;
+  }
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .headercontent {
+    margin-left: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  .logo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .uniName {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .authPopup {
+    width: 90%;
+    max-width: 320px;
+    padding: 20px;
+  }
+}
+
+/* ===== FORM STYLING ===== */
+.authPopup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styled Input Fields */
+.authPopup input {
+  width: 90%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+/* Same Width & Consistent Styling */
+.authPopup input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+}
+
+.authPopup button:hover {
+  background: linear-gradient(45deg, #0056b3, #003c8f);
+  transform: scale(1.03);
+}
+
+/* ===== LOGO STYLING ===== */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 100px;
+  /* Adjust size for better visibility */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  /* Slight zoom effect on hover */
+}

@@ -1,0 +1,96 @@
+.nepSyllabus {
+  max-width: 700px;
+  margin: 20px auto 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+.nepSyllabus h2 {
+  font-size: 24px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.nepSyllabus p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.syllabusContent {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.syllabusContent h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.syllabusContent pre {
+  font-size: 14px;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.coursesList {
+  list-style: none;
+  padding: 0;
+}
+
+.coursesList li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.coursesList a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.coursesList a:hover {
+  color: #004c9c;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .nepSyllabus {
+    padding: 20px 12px;
+  }
+
+  .nepSyllabus h2 {
+    font-size: 20px;
+  }
+
+  .nepSyllabus p {
+    font-size: 14px;
+  }
+
+  .coursesList li {
+    font-size: 14px;
+    margin: 8px 0px;
+  }
+
+  .syllabusContent {
+    padding: 5px 12px;
+    line-height: 20px;
+    margin: 20px 0px 20px;
+  }
+
+  .syllabusContent h3 {
+    font-size: 18px;
+  }
+
+  .syllabusContent pre {
+    font-size: 10px;
+    white-space: pre-wrap;
+  }
+}

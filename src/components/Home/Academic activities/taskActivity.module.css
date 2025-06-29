@@ -1,0 +1,89 @@
+.mainQuesDiv{
+    width: 65%;
+    margin: 2% auto 8%;
+    padding: 5px 40px;
+}
+.mainQuesDiv h1{
+    text-align: left;
+}
+.mainQuesDiv .dateTimeSet{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quesDiv{
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    border: 1px solid rgba(0,168,255,.4);
+}
+.Question{
+    font-weight: 600;
+    font-size: 18px;
+}
+.quesDiv p{
+    text-align: left;
+}
+.quesDiv p strong{
+    text-decoration: underline;
+}
+.bottomLine{
+    margin: 40px 0px;
+    border-bottom: 1px solid #bebaba;
+}
+.quesDivInput{
+    width: 70%;
+    margin: 40px 0px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #bebaba;
+    font-size: 16px;
+}
+.quesDivInput:focus{
+    outline: 0; 
+}
+.submitLinkBtn{
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background: linear-gradient(269deg, #0048ff, #0096ff);
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .mainQuesDiv {
+      width: 90%; 
+      padding: 5px 10px; 
+      margin: 2% auto 20%;
+    }
+  
+    .mainQuesDiv .dateTimeSet{
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .quesDiv {
+      padding: 20px 10px; 
+    }
+    .quesDiv p{
+        font-size: 14px;
+    }
+    .Question{
+        font-size: 17px !important;
+    }
+  
+    .quesDivInput {
+      width: 80%; 
+      margin: 20px 0px;
+      font-size: 14px; 
+    }
+  
+    .submitLinkBtn {
+      font-size: 14px; 
+      padding: 10px 20px; 
+    }
+  }

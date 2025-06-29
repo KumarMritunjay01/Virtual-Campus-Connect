@@ -1,0 +1,166 @@
+.eLearning {
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.eLearning h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.eLearning p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.eLearning h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.eLearning .coursesList {
+  list-style: none;
+  padding: 0;
+}
+
+.eLearning .coursesList li {
+  margin-bottom: 10px;
+}
+
+.eLearning .coursesList a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #007bff;
+  transition: color 0.2s;
+}
+
+.eLearning .coursesList a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.eLearning .quizDiv {
+  margin-top: 50px;
+}
+
+.eLearning .quizDiv .quizBtn {
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Eina01, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  outline: none;
+  padding: 19px 26px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 0;
+}
+
+.eLearning .quizDiv .quizBtn:before,
+.quizBtn:after {
+  border-radius: 80px;
+}
+
+.eLearning .quizDiv .quizBtn:before {
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.eLearning .quizDiv .quizBtn:after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.eLearning .quizDiv .quizBtn:hover:not(:disabled):before {
+  background: linear-gradient(
+    92.83deg,
+    rgb(255, 116, 38) 0%,
+    rgb(249, 58, 19) 100%
+  );
+}
+
+.eLearning .quizDiv .quizBtn:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.eLearning .quizDiv .quizBtn:active:not(:disabled) {
+  color: #ccc;
+}
+
+.eLearning .quizDiv .quizBtn:active:not(:disabled):before {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+}
+
+.eLearning .quizDiv .quizBtn:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.eLearning .quizDiv .quizBtn:disabled {
+  cursor: default;
+  opacity: 0.24;
+}
+
+@media screen and (max-width: 600px) {
+  .eLearning {
+    padding: 15px;
+  }
+
+  .eLearning p {
+    font-size: 12px;
+  }
+
+  .eLearning .coursesList li {
+    margin-bottom: 5px;
+  }
+
+  .eLearning .coursesList a {
+    font-size: 12px;
+  }
+
+  .eLearning .quizDiv {
+    margin-top: 30px;
+  }
+
+  .eLearning .quizDiv .quizBtn {
+    padding: 15px 20px;
+  }
+}

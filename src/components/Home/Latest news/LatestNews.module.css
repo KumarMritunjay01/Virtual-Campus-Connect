@@ -1,0 +1,21 @@
+.newsDiv {
+  height: 30vh;
+  margin: 40px auto;
+}
+.newsHeading {
+  color: red;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .newsDiv {
+    padding: 15px;
+  }
+
+  .newsHeading {
+    font-size: 20px;
+  }
+  .newsDiv p {
+    font-size: 14px;
+  }
+}

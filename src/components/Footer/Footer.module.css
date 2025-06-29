@@ -1,0 +1,140 @@
+.footer {
+  background-color: #12343b;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contactInfo {
+  margin: 10px 0;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+}
+
+.linkList li {
+  margin: 10px 0;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.socialIcon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.creator {
+  margin: 10px 0px -15px;
+  font-size: 15px;
+}
+
+.feedbackDiv {
+  background-color: rgb(1, 67, 110);
+  color: #fff;
+  font-size: 18px;
+  max-width: 40%;
+  padding: 20px 15px;
+  margin: 4% 0% 0% 26%;
+  cursor: pointer;
+}
+.feedbackDiv:hover {
+  background-color: rgb(1, 60, 100);
+}
+
+/* Define a class to hide the footer when printing */
+@media print {
+  .footer {
+    display: none;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0 30px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    padding: 0;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .contactInfo {
+    margin: 5px 0;
+  }
+
+  .linkList {
+    text-align: center;
+  }
+
+  .linkList li {
+    margin: 10px 0;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .socialLinks {
+    margin-top: 10px;
+  }
+
+  .socialIcon {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .creator {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .feedbackDiv {
+    font-size: 16px;
+    max-width: 45%;
+    padding: 20px 10px;
+  }
+}
