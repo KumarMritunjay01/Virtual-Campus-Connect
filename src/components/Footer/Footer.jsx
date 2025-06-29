@@ -67,7 +67,7 @@ function Footer() {
         </div>
       </div>
       <p className={styles.creator}>
-        &copy; All rights reserved 2025, Mern-Master
+        &copy; All rights reserved 2025, Campus-connect
       </p>
     </footer>
   );
