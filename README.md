@@ -1,4 +1,5 @@
 # Virtual Campus Connect
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://virtual-campus-connect.vercel.app/)
 
 **Virtual Campus Connect** is a comprehensive web application designed to bring students, faculty, and campus resources together virtually. It offers a collaborative platform for academics, events, student interaction, and resource sharing.
 
