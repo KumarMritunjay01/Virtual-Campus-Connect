@@ -44,7 +44,7 @@ function Footer() {
           <div className={styles.socialLinks}>
             <a
               className={styles.socialIcon}
-              href="https://github.com/mernmaster04"
+              href="https://github.com/KumarMritunjay01"
             >
               <i className="fa-brands fa-github"></i>
             </a>
